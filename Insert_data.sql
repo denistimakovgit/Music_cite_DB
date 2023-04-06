@@ -52,7 +52,8 @@ values
 (2,8),
 (3,6),
 (4,5),
-(5,7);
+(5,7),
+(2, 10);
 
 --свяжем данные в таблицах singers и albums
 insert into singersalbums (singer_id, album_id)
@@ -120,7 +121,7 @@ values
 (8, 'Disco 80 legends', '2000-10-02');
 
 --соеденим данные в таблицах collections и songs
-insert into collectionssongs (collection_id, song_ig)
+insert into collectionssongs (collection_id, song_id)
 values 
 (1, 22),
 (1, 23),
