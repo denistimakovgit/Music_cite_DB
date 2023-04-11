@@ -41,6 +41,6 @@ CREATE TABLE IF NOT EXISTS Collections (
 
 CREATE TABLE IF NOT EXISTS CollectionsSongs (
 	collection_id INTEGER REFERENCES Collections(collection_id),
-	song_ig INTEGER REFERENCES Songs(song_id),
-	primary key(collection_id, song_ig)
+	song_id INTEGER REFERENCES Songs(song_id),
+	primary key(collection_id, song_id)
 );
