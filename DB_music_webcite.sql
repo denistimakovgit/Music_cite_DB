@@ -36,8 +36,7 @@ CREATE TABLE IF NOT EXISTS Songs (
 CREATE TABLE IF NOT EXISTS Collections (
 	collection_id SERIAL PRIMARY KEY,
 	collection_name VARCHAR(120) NOT null,
-	release_date DATE NOT null check (release_date>'1900-01-01'),
-	song_id INTEGER NOT NULL REFERENCES Songs(song_id)
+	release_date DATE NOT null check (release_date>'1900-01-01')
 );
 
 CREATE TABLE IF NOT EXISTS CollectionsSongs (
